@@ -1,9 +1,9 @@
 flask
 langgraph
-torch
 transformers
 parler-tts
 soundfile
 python-dotenv
 requests
+
 

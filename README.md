@@ -56,14 +56,20 @@ cd The-Empathy-Engine-Giving-AI-a-Human-Voice
 conda create --name voice
 conda activate voice
 ```
-### 3. Install dependencies
+
+### 3. Install CPU-only PyTorch first (important to avoid .pyd errors on Windows):
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
+### 4. Install other dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
 
-### 4. Set up environment variables
+### 5. Set up environment variables
 
 Create a `.env` file at the root of the project:
 
@@ -71,7 +77,7 @@ Create a `.env` file at the root of the project:
 HUGGINGFACE_API_KEY=your_huggingface_api_key_here
 ```
 
-### 5. Run the Flask server
+### 6. Run the Flask server
 
 ```bash
 python app.py
@@ -79,7 +85,7 @@ python app.py
 
 Server runs at `http://127.0.0.1:5000/`.
 
-### 6. Test the API
+### 7. Test the API
 
 Send a POST request to `/generate_audio` with JSON body:
 
