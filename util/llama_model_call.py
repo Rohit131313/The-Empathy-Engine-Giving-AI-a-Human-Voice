@@ -1,7 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
-from graph.graph import GraphState  
+from graph.state import GraphState  
 
 load_dotenv()
 HF_API_TOKEN = os.getenv("HUGGINGFACE_API_KEY")

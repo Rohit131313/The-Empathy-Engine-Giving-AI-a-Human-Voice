@@ -1,15 +1,7 @@
 from langgraph.graph import END, StateGraph
 from graph.consts import EMOTION_DETECT, EMOTION_DESC, RESPONSE_GEN, TTS_GEN
 from graph.nodes import detect_emotion, generate_emotion_description, generate_response, generate_tts
-
-# -------------------
-# Define State Graph
-# -------------------
-class GraphState(dict):
-    def __init__(self, text):
-        super().__init__()
-        self["text"] = text
-        self["flow"] = []
+from graph.state import GraphState
 
 flow = StateGraph(state_schema=GraphState)
 

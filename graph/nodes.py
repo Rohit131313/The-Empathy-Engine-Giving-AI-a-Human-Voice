@@ -1,10 +1,11 @@
 from util.emotion_detector import get_emotion
 from util.llama_model_call import call_llm
 import torch
+from graph.state import GraphState
 from transformers import AutoTokenizer
 from parler_tts import ParlerTTSForConditionalGeneration
 import soundfile as sf
-from graph.graph import GraphState
+
 
 # -------------------
 # 1️⃣ Emotion Detection Node

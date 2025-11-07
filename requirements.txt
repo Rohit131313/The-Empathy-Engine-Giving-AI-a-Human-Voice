@@ -6,3 +6,4 @@ parler-tts
 soundfile
 python-dotenv
 requests
+

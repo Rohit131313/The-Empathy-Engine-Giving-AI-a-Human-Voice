@@ -13,6 +13,7 @@ The system uses a Hugging Face LLaMA model for both emotion-aware response gener
 EmpathyEngine/
 │
 ├─ graph/
+|   |- state.py            # Define state of graph
 │   ├─ consts.py           # Node identifiers
 │   ├─ graph.py            # StateGraph definition & node connections
 │   └─ nodes.py            # Node functions (emotion detection, response, TTS)

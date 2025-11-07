@@ -1,5 +1,6 @@
 from flask import Flask, request, send_file
-from graph.graph import app_graph, GraphState
+from graph.graph import app_graph
+from graph.state import GraphState
 
 app = Flask(__name__)
 
